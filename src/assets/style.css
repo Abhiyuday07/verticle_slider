@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:'Courier New', Courier, monospace;
+  height: 100vh;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.left{
+  height: 100vh;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .5s ease-in-out;
+}
+
+.left div  {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.left h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+
+.right{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform .5s ease-in-out;
+}
+
+.right div{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  height: 100%;
+  width: 100%;
+}
+
+.slider .buttons{
+  position: absolute;
+  left: 34%;
+  top: 50%;
+  z-index: 1;
+}
+
+.slider .buttons .down{
+  transform: translateY(100%);
+ 
+}
+
+.slider .buttons .up{
+  transform: translateY(-100%);
+     
+}
+
+/* .leftColumn,.rightColumn{
+    transition: transform 0.5s;
+  }
+
+  .leftColumn.move-up{
+    transform: translateY(-100%);
+  }
+
+  .leftColumn.move-down{
+    transform: translateY(100%);
+  } */
+/* 
+  .rightColumn.move-up{
+    transform: translateY(100%);
+    
+  } */
+
+  /* .rightColumn.move-down {
+    transform: translateY(-100%);
+} */
+
+.buttons{
+  /* background-color: aliceblue; */
+  /* border: none; */
+  color: azure;
+  cursor: pointer;
+ 
+}
+/* 
+  
+  
+  .bg-color-1 {
+    background-color:yellow;
+}
+
+.bg-color-2 {
+    background-color: green;
+}
+
+.bg-color-3 {
+    background-color: skyblue;
+}
+
+.bg-color-4 {
+    background-color: palevioletred;
+}  */
+/* .leftColumn, .rightColumn {
+  transition: transform 0.5s;
+}
+
+.leftColumn.slide-up {
+  transform: translateY(-100%);
+}
+
+.leftColumn.slide-down {
+  transform: translateY(100%);
+}
+
+.rightColumn.slide-up {
+  transform: translateY(100%);
+}
+
+.rightColumn.slide-down {
+  transform: translateY(-100%); */
+ /*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

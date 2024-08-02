@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.left, .right {
+  position: relative;
+  height: 100vh;
+  /* width: 50%; */
+  overflow: hidden;
+}
+
+.slides {
+  height: 400%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 70%;
+}
+
+.slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.slider .buttons {
+  position: absolute;
+  left: 30%;
+  transform: translateX(-50%);
+  top: 50%;
+  z-index: 1;
+}
+
+.buttons button {
+  cursor: pointer;
+}
+
+.buttons .down {
+  transform: translateY(100%);
+}
+
+.buttons .up {
+  transform: translateY(-100%);
+}
